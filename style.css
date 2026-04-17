@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+/* GRID BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#1e293b 1px, transparent 1px),
+                    linear-gradient(90deg, #1e293b 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+}
+
+/* HEADER */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #00f5ff;
+  text-shadow: 0 0 10px #00f5ff, 0 0 20px #00f5ff;
+}
+
+/* HERO */
+.hero {
+  padding: 40px 20px;
+}
+
+/* ORBIT */
+.orbit-container {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: auto;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px #00f5ff;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 12s linear infinite;
+}
+
+.orbit img {
+  width: 35px;
+  position: absolute;
+}
+
+.orbit1 img { top: 0; left: 50%; transform: translateX(-50%); }
+.orbit2 img { bottom: 0; left: 50%; transform: translateX(-50%); }
+.orbit3 img { left: 0; top: 50%; transform: translateY(-50%); }
+.orbit4 img { right: 0; top: 50%; transform: translateY(-50%); }
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* TEXT */
+.hero h1 span {
+  color: #00f5ff;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+  color: #cbd5e1;
+}
+
+/* BUTTON */
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  background: #00f5ff;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #00f5ff;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #00f5ff;
+  color: white;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  width: 180px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(0, 245, 255, 0.2);
+}
+
+section {
+  margin-top: 50px;
+}
+
+@media(max-width: 768px){
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
