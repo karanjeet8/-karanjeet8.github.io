@@ -1,34 +1,43 @@
-const text = ["Frontend Developer", "React Developer", "Freelancer", "UI Designer"];
+const text = [
+  "Frontend Developer",
+  "React Developer",
+  "Freelancer",
+  "UI Designer",
+  "Digital Marketer"
+];
+
 let i = 0;
 let j = 0;
 let current = "";
 let isDeleting = false;
+const typing = document.getElementById("typing");
 
 function type() {
-  const typing = document.getElementById("typing");
 
-  if (i < text.length) {
-    if (!isDeleting && j <= text[i].length) {
-      current = text[i].substring(0, j++);
-    } else if (isDeleting && j >= 0) {
-      current = text[i].substring(0, j--);
-    }
+  current = text[i];
 
-    typing.innerHTML = current;
-
-    if (j === text[i].length) {
-      isDeleting = true;
-      setTimeout(type, 1200); // pause
-      return;
-    }
-
-    if (j === 0) {
-      isDeleting = false;
-      i = (i + 1) % text.length;
-    }
+  if (!isDeleting) {
+    typing.innerHTML = current.substring(0, j++) + "|";
+  } else {
+    typing.innerHTML = current.substring(0, j--) + "|";
   }
 
-  setTimeout(type, isDeleting ? 60 : 120); // slow speed
+  let speed = isDeleting ? 80 : 150;
+
+  /* Stop at full word */
+  if (!isDeleting && j === current.length + 1) {
+    speed = 1800;
+    isDeleting = true;
+  }
+
+  /* Move next word */
+  if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % text.length;
+    speed = 500;
+  }
+
+  setTimeout(type, speed);
 }
 
 type();

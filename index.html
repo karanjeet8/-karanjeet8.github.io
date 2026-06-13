@@ -1,89 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Karanjeet Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+<!-- Animated Coding Background -->
+<div class="code-bg">
+<pre>
+&lt;html&gt;
+const developer = "Karanjeet";
+const stack = ["React", "Node", "MongoDB", "Git"];
+function buildFuture() {
+ return "Success";
+}
+&lt;/html&gt;
+</pre>
+</div>
+
+<!-- Navbar -->
 <header>
-  <h2 class="logo">
-    <span>Welcome</span> My Portfolio <span>Website</span>
-  </h2>
+<div class="navbar">
+<h2 class="logo">My Portfolio</h2>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
-<section class="hero">
+<!-- Hero -->
+<section id="home" class="hero">
 
-  <div class="orbit-container">
+<h3>MERN Stack Developer & Digital Marketer</h3>
 
-    <!-- STATIC IMAGE -->
-    <div class="circle">
-      <img src="https://lh3.googleusercontent.com/a/ACg8ocIaParObbyV0MUaAShrX1gDzUNgn0wIzY3IGMvgd8rWUjCByglR=s360-c-no">
-    </div>
+<h1>
+Welcome To <span>My Portfolio</span><br>
+<span id="typing"></span>
+</h1>
 
-    <!-- ROTATING ICONS -->
-    <div class="orbit orbit1">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
-    </div>
+<p>
+Building responsive web applications, e-commerce systems,
+admin dashboards, AI-powered apps, and digital marketing solutions.
+</p>
 
-    <div class="orbit orbit2">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
-    </div>
+<div class="buttons">
+<a href="https://wa.me/916283138384" target="_blank" class="btn">Hire Me</a>
+<a href="https://github.com/karanjeet8" target="_blank" class="btn outline">My Projects</a>
+</div>
 
-    <div class="orbit orbit3">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
-    </div>
+<!-- Orbit -->
+<div class="orbit-container">
 
-    <div class="orbit orbit4">
-      <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png">
-    </div>
+<div class="circle">
+<img src="https://lh3.googleusercontent.com/a/ACg8ocIaParObbyV0MUaAShrX1gDzUNgn0wIzY3IGMvgd8rWUjCByglR=s360-c-no">
+</div>
 
-  </div>
+<div class="orbit orbit1">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+</div>
 
-  <h3>Software Developer & Freelancer</h3>
+<div class="orbit orbit2">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
+</div>
 
-  <h1>
-    Hey! I'm <span>Karanjeet</span><br>
-    <span id="typing"></span>
-  </h1>
+<div class="orbit orbit3">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
+</div>
 
-  <p>Building modern websites using React, Node.js & AI tools</p>
+<div class="orbit orbit4">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919825.png">
+</div>
 
-  <div class="buttons">
-    <a href="https://wa.me/916283138384" target="_blank" class="btn">Hire Me</a>
-    <a href="https://github.com/karanjeet8" target="_blank" class="btn outline">My Projects</a>
-  </div>
+<div class="orbit orbit5">
+<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+</div>
 
+</div>
 </section>
 
-<section class="skills">
-  <h2>Skills</h2>
-  <div class="cards">
-    <div class="card">HTML / CSS</div>
-    <div class="card">JavaScript</div>
-    <div class="card">React.js</div>
-    <div class="card">Node.js</div>
-    <div class="card">Firebase</div>
-  </div>
+<!-- About -->
+<section id="about">
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<div class="about-img">
+<img src="https://lh3.googleusercontent.com/a/ACg8ocIaParObbyV0MUaAShrX1gDzUNgn0wIzY3IGMvgd8rWUjCByglR=s360-c-no">
+</div>
+
+<div class="about-content">
+<h3>Karanjeet</h3>
+<p><strong>Education:</strong> Bachelor of Computer Applications (BCA)</p>
+<p><strong>Specialization:</strong> MERN Stack Development</p>
+<p><strong>Skills:</strong> React.js, Node.js, Firebase, MongoDB, Git, GitHub, SEO, AI Tools</p>
+<p><strong>Goal:</strong> To become a successful Full Stack Developer and Digital Marketer.</p>
+</div>
+
+</div>
 </section>
 
-<section class="projects">
-  <h2>Projects</h2>
-  <div class="cards">
-    <div class="card">E-commerce Website</div>
-    <div class="card">Investment App</div>
-    <div class="card">Loan System</div>
-  </div>
+<!-- Skills -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+<h3>HTML/CSS</h3>
+<p>Builds structured and responsive websites.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+<h3>JavaScript</h3>
+<p>Handles interactivity and dynamic functionality.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919851.png">
+<h3>React.js</h3>
+<p>Frontend development for modern web apps.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919825.png">
+<h3>Node.js</h3>
+<p>Backend server-side application development.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png">
+<h3>MongoDB</h3>
+<p>Database management for applications.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png">
+<h3>Firebase</h3>
+<p>Authentication and realtime database management.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png">
+<h3>Git</h3>
+<p>Version control system for tracking code changes.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
+<h3>GitHub</h3>
+<p>Platform to host and collaborate on coding projects.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/888/888859.png">
+<h3>SEO</h3>
+<p>Improves search ranking and website visibility.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+<h3>Digital Marketing</h3>
+<p>SEO, ads, campaigns and social media growth.</p>
+</div>
+
+</div>
 </section>
 
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Email: bawa31397@gmail.com</p>
-  <p>Phone: 6283138384</p>
+<!-- Projects -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="cards">
 
-  <button class="btn">Contact Me</button>
+<div class="card">
+<h3>E-commerce Website</h3>
+<p>Built using React.js and Firebase with cart system, payment integration and admin dashboard.</p>
+</div>
+
+<div class="card">
+<h3>Investment Dashboard</h3>
+<p>Admin-based investment system with VIP plans, deposits and withdrawal management.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Modern animated portfolio with orbit effects, typing animation and responsive UI.</p>
+</div>
+
+<div class="card">
+<h3>Trading Homepage</h3>
+<p>Responsive multilingual trading homepage with support integration.</p>
+</div>
+
+</div>
 </section>
+
+<!-- Certificates -->
+<section id="certificates">
+<h2>Certificates</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://media.licdn.com/dms/image/v2/D4D2DAQH36DB1s0fReA/profile-treasury-image-shrink_1920_1920/B4DZinahJ5GkAg-/0/1755155413515?e=1781967600&v=beta&t=61ROIRsvfj_tkdTQal4O4LNXVV1f6QQV1lDqX_j8Ki4">
+<h3>Generative AI</h3>
+
+</div>
+
+<div class="card">
+<img src="https://media.licdn.com/dms/image/v2/D562DAQFObPZzI5x7IQ/profile-treasury-image-shrink_1280_1280/B56Z5qViy4HAAY-/0/1779900493253?e=1781967600&v=beta&t=g-C3GA-FZirCbOB781SS9icfX3tRaD7-ONZ36zhMpGo">
+
+<h3>Remote Internship</h3>
+
+</div>
+
+<div class="card">
+<img src="https://media.licdn.com/dms/image/v2/D562DAQHkOpJgtCBZcg/profile-treasury-image-shrink_8192_8192/B56Z6oLH71IgAQ-/0/1780937949160?e=1781967600&v=beta&t=_xujlC3oTO5Hcy6W8vY38Ylg2d8nRzR7h6JuXwO4XO8">
+
+<h3>Prompt Engineering</h3>
+
+</div>
+
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: bawa31397@gmail.com</p>
+<p>Phone: +91 6283138384</p>
+<p>LinkedIn: www.linkedin.com/in/karan-jeet1212</p>
+<p>GitHub: github.com/karanjeet8</p>
+
+<div class="buttons">
+<a href="mailto:bawa31397@gmail.com" class="btn">Email Me</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="footer-content">
+<h3>Karanjeet Portfolio</h3>
+<p>Connect with me</p>
+
+<div class="social-icons">
+<a href="https://www.linkedin.com/in/karan-jeet1212" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://github.com/karanjeet8" target="_blank"><i class="fab fa-github"></i></a>
+<a href="mailto:bawa31397@gmail.com"><i class="fas fa-envelope"></i></a>
+<a href="https://wa.me/916283138384" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<p>© 2026 All Rights Reserved | Karanjeet</p>
+</div>
+</footer>
 
 <script src="script.js"></script>
 </body>
